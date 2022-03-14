@@ -1,13 +1,13 @@
 import { styled } from "@mui/system";
 import { AppBar, Toolbar, IconButton, Container } from '@mui/material';
 
-import Logo from "../../public/assets/icons/logo.svg";
+import Logo from "./logo";
 
 const Offset = styled("div")(({ theme }) => ({
   ...theme.mixins.toolbar,
 }));
 
-export default function SimpleHeader({ pages }) {
+export default function SimpleHeader({ children }) {
   return (
     <>
       <AppBar position="fixed" elevation={0} sx={{
@@ -15,9 +15,8 @@ export default function SimpleHeader({ pages }) {
       }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <IconButton height={48} disableRipple disableFocusRipple>
-              <Logo />
-            </IconButton>
+            <Logo />
+            {children}
           </Toolbar>
         </Container>
       </AppBar>

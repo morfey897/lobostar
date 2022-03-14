@@ -14,6 +14,14 @@ export default {
     btn_info: "Pomoc",
     btn_exit: "Wyloguj sie",
   },
+  game_header: {
+    search: "Search",
+    btn_light: "Light UI",
+    btn_dark: "Dark UI",
+    btn_collapse: "Collapse",
+    btn_settings: "Settings",
+    btn_help: "Help",
+  },
   main: {
     search: "Wyszukaj",
 
