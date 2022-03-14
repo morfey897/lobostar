@@ -9,6 +9,7 @@ import { createTheme } from "./themes";
 
 import RegistrationPage from "./pages/registration";
 import MainPage from "./pages/main";
+import StakePage from "./pages/stake";
 import GamePage from "./pages/game";
 
 import plJson from "./locales/pl";
@@ -44,6 +45,7 @@ function App() {
       <CssBaseline />
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="/stake" element={<StakePage />} />
         <Route path="/registration" element={<RegistrationPage />} />
         <Route path="/game" element={<GamePage />} />
       </Routes>

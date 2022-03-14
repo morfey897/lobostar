@@ -7,7 +7,7 @@ import UserIcon from "../../public/assets/icons/user.svg";
 import { Table, TableBody, TableCell, TableContainer, TableRow, TableHead, Grid, Paper, Container, Box, Button, Typography } from '@mui/material';
 
 const rangeRows = [
-  { range: "644 - 1444", pln: "mikolas1999", action: "Join", actionProps: { color: 'primary', variant: 'outlined' } },
+  { range: "644 - 1444", pln: "mikolas1999", action: "Join", actionProps: { color: 'primary', variant: 'outlined', size: 'small' } },
   { range: "1100 - 1375", pln: "1.10/ -0.50 / -2.10", action: "Obserwuj", actionProps: { color: 'secondary', } },
   { range: "840 - 1640", pln: "Korowiow", action: "Obserwuj", actionProps: { color: 'secondary', } },
   { range: "854 - 1585", pln: "depechemode90", action: "Obserwuj", actionProps: { color: 'secondary', } },
@@ -36,7 +36,7 @@ function MainPage() {
       marginBottom: "50px",
     }}>
       <Grid container>
-        <Grid item md={6} sx={{ paddingRight: "8px" }}>
+        <Grid item md={6} xs={12}  sx={{ paddingRight: "8px" }}>
           <Paper elevation={0} sx={{
             backgroundColor: "#111B25E5",
             borderRadius: "20px",
@@ -79,7 +79,7 @@ function MainPage() {
           </Paper>
         </Grid>
 
-        <Grid item md={6} sx={{ paddingLeft: "8px" }}>
+        <Grid item md={6} xs={12} sx={{ paddingLeft: "8px" }}>
           <Paper elevation={0} sx={{
             backgroundColor: "#111B25E5",
             borderRadius: "20px",

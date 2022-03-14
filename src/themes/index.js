@@ -54,16 +54,23 @@ const defaultTheme = {
           fontSize: "1rem",
         },
         contained: {
+          fontWeight: 600,
           borderRadius: "33px",
-          padding: "16px 32px"
+          padding: "16px 32px",
+          fontSize: "1rem",
+          lineHeight: "22px",
         },
         outlined: {
           fontSize: "1rem",
           lineHeight: "20px",
           fontWeight: 400,
           borderRadius: "33px",
+          padding: "16px 32px",
+        },
+        outlinedSizeSmall: {
           padding: "8px 32px",
         }
+
       }
     },
     MuiInputBase: {

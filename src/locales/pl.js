@@ -44,6 +44,14 @@ export default {
     please_select: "Prosze zaznaczyc wymagane zgody.",
 
     btn_register: "Rejestr",
+  },
 
+  stake: {
+    btn_public: "Public",
+    btn_private: "Private",
+    btn_create_game: "Create game",
+
+    range: "ZAKRES",
+    rate: "STAWKA (PLN ZA PUNKT)",
   }
 };

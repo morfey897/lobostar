@@ -6,6 +6,10 @@ export default {
       main: "#CEB766",
       contrastText: "#fff",
     },
+    secondary: {
+      main: "#fff",
+      contrastText: "#fff",
+    },
     text: {
       primary: "#ffffff",
       secondary: "#CEB766"
@@ -34,6 +38,18 @@ export default {
             border: "2px solid #CEB766",
           }
         },
+        outlinedSecondary: {
+          color: "#ffffff",
+          border: "1px solid #FFFFFF",
+          backgroundColor: "rgba(255, 255, 255, 0.2)",
+          "&:hover": {
+            border: "1px solid #FFFFFF",
+          }
+        },
+        containedSuccess: {
+          color: "#ffffff",
+          backgroundColor: "rgba(34, 125, 48, 0.6)",
+        }
       }
     },
     MuiMenuItem: {

@@ -109,10 +109,10 @@ export default function MainHeader({ pages }) {
               </Box>
               <Button sx={{
                 marginLeft: "22px"
-              }} color="primary" variant='outlined' startIcon={<PlusIcon />}>{t("btn_charge")}</Button>
+              }} color="primary" variant='outlined' size='small' startIcon={<PlusIcon />}>{t("btn_charge")}</Button>
               <Button sx={{
                 marginLeft: "109px"
-              }} color="primary" variant='outlined' startIcon={<PlusIcon />}>{t("btn_new_game")}</Button>
+              }} color="primary" variant='outlined' size='small' startIcon={<PlusIcon />}>{t("btn_new_game")}</Button>
 
               <Button sx={{
                 marginLeft: "20px"

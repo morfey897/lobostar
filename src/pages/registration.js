@@ -74,26 +74,26 @@ function RegistrationPage() {
               paddingTop: "18px"
             },
           }}>
-            <Grid item md={6}>
+            <Grid item md={6} xs={12} >
               <TextField label={t("login_label")} name="login" fullWidth value={state.login} onChange={onChange} />
             </Grid>
 
-            <Grid item md={6}>
+            <Grid item md={6} xs={12} >
               <TextField name="email" label={t("email_label")} fullWidth value={state.email} onChange={onChange} />
             </Grid>
 
-            <Grid item md={6}>
+            <Grid item md={6} xs={12} >
               <TextField name="name" label={t("name_label")} fullWidth value={state.name} onChange={onChange} />
             </Grid>
 
-            <Grid item md={6}>
+            <Grid item md={6} xs={12} >
               <TextField name="surname" label={t("surname_label")} fullWidth value={state.surname} onChange={onChange} />
             </Grid>
-            <Grid item md={6}>
+            <Grid item md={6} xs={12} >
               <TextField name="pass" label={t("pass_label")} fullWidth value={state.pass} onChange={onChange} type="password" />
             </Grid>
 
-            <Grid item md={6}>
+            <Grid item md={6} xs={12} >
               <TextField name="pass_confirm" label={t("pass_confirm_label")} fullWidth value={state.pass_confirm} onChange={onChange} type="password" />
             </Grid>
           </Grid>
