@@ -2,7 +2,9 @@ import { createTheme as createMuiTheme } from '@mui/material/styles';
 import darkTheme from './dark-theme';
 import lightThene from "./light-theme";
 
-import "@fontsource/montserrat";
+import "@fontsource/montserrat/400.css";
+import "@fontsource/montserrat/600.css";
+import "@fontsource/montserrat/700.css";
 
 const defaultTheme = {
   breakpoints: {
@@ -106,6 +108,16 @@ const defaultTheme = {
           fontSize: "1rem",
           lineHeight: "19px",
           padding: "7px 33px",
+        },
+      }
+    },
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          textTransform: "none",
+          fontFamily: "Montserrat, sans-serif",
+          fontWeight: 600,
+          fontSize: "1.125rem",
         },
       }
     },

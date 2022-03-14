@@ -61,5 +61,20 @@ export default {
         },
       }
     },
+    MuiTab: {
+      styleOverrides: {
+        textColorPrimary: {
+          background: "none",
+          color: "#fff",
+          borderRadius: "20px 20px 0px 0px",
+          "&.Mui-selected": {
+            color: "#fff",
+            // /
+            backgroundColor: "#1C2936"
+          }
+        },
+      }
+    }
+
   }
 };

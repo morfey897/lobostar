@@ -65,5 +65,19 @@ export default {
     max_stake: "STAWKA MAKSYMALNA PRZY PODANYM",
     max_win: "MAKSYMALNA WYGRANA",
     max_defeat: "MAKSYMALNA PRZEGRANA",
+  },
+
+  game: {
+    btn_home: "Home",
+    btn_play: "Play",
+    btn_puzzles: "Puzzles",
+    btn_today: "Today",
+    btn_connect: "Conect",
+    btn_more: "More",
+    btn_learn: "Learn",
+
+    tab_movie: "Movie",
+    tab_chat: "Chat",
+    tab_settings: "Settings",
   }
 };
