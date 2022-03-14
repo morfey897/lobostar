@@ -53,5 +53,9 @@ export default {
 
     range: "ZAKRES",
     rate: "STAWKA (PLN ZA PUNKT)",
+
+    max_stake: "STAWKA MAKSYMALNA PRZY PODANYM",
+    max_win: "MAKSYMALNA WYGRANA",
+    max_defeat: "MAKSYMALNA PRZEGRANA",
   }
 };

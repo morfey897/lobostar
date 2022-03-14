@@ -119,7 +119,8 @@ const defaultTheme = {
     MuiContainer: {
       styleOverrides: {
         root: {
-          padding: 0
+          paddingLeft: "0 !important",
+          paddingRight: "0 !important",
         }
       }
     },
