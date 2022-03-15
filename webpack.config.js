@@ -45,10 +45,10 @@ module.exports = (env, argv) => {
       allowedHosts: [],
     },
     plugins: [
-      new DotenvWebpack({
-        path: DOT_ENV_PATH,
-        defaults: true
-      }),
+      // new DotenvWebpack({
+      //   path: DOT_ENV_PATH,
+      //   defaults: true
+      // }),
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin({
         filename: MODE === 'development' ? `bandle-[name].css` : `bandle-[name].${CSS_VERSION}.css`
