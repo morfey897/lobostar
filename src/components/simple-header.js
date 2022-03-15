@@ -10,7 +10,7 @@ const Offset = styled("div")(({ theme }) => ({
 export default function SimpleHeader({ children }) {
   return (
     <>
-      <AppBar position="fixed" elevation={0} sx={{
+      <AppBar position="absolute" elevation={0} sx={{
         boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
       }}>
         <Container maxWidth="xl">

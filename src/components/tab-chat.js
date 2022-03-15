@@ -5,11 +5,11 @@ import withTab from "../hocs/hoc-tab";
 import ChatItem from "./chat-item";
 
 import SmileIcon from "../../public/assets/icons/smile.svg";
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 const TPL = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 
-function TabChat({ parentHeader }) {
+function TabChat({ parentHeight }) {
   const { t } = useTranslation("game");
 
   const [MESSAGES, setMessages] = useState([
@@ -38,10 +38,9 @@ function TabChat({ parentHeader }) {
 
   return <>
     <List
-      ref={scrollRef}
       sx={{
         width: '100%',
-        height: `calc(${parentHeader}px - 60px)`,
+        height: `calc(${parentHeight}px - 60px)`,
         overflowY: 'auto',
         overflowX: "hidden"
       }}>
