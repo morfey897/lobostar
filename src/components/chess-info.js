@@ -1,33 +1,17 @@
 import { useTranslation } from 'react-i18next';
 
-import { Tabs, Tab, Paper, Box, Typography } from '@mui/material';
+import { Tabs, Tab, Paper, Box } from '@mui/material';
 import { useCallback, useState } from 'react';
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ p: "30px" }}>
-          {children}
-        </Box>
-      )}
-    </div>
-  );
-}
+import TabChat from "./tab-chat";
+import TabMovie from "./tab-movie";
+import TabSettings from "./tab-settings";
 
 function ChessInfo() {
 
   const { t } = useTranslation("game");
 
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(2);
 
   const onChangeActiveTab = useCallback((event, newValue) => {
     setActiveTab(newValue);
@@ -60,18 +44,9 @@ function ChessInfo() {
       height: "710px"
     }}>
 
-      {/*  */}
-      <TabPanel value={activeTab} index={0}>
-        Movie
-      </TabPanel>
-
-      <TabPanel value={activeTab} index={1}>
-        Chat
-      </TabPanel>
-
-      <TabPanel value={activeTab} index={2}>
-        Settings
-      </TabPanel>
+      <TabMovie value={activeTab} index={0} />
+      <TabChat value={activeTab} index={1} />
+      <TabSettings value={activeTab} index={2} />
     </Paper>
   </Box>
 }

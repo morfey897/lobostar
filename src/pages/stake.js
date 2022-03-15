@@ -49,12 +49,27 @@ function StakePage() {
         }}>
           <Grid container>
             <Grid item md={6} xs={12} >
-
-              <SliderRange valueFormatter={([min, max]) => `${min} - ${max}`} onChange={onChangeRange} value={range} min={[0, 695]} max={[705, 1400]} label={t("range")} />
-
-              <SliderRate onChange={onChangeRate} value={rate} min={0} max={1400} label={t("rate")} sx={{
+              <Typography textAlign={"center"} sx={{
+                fontWeight: "600",
+                fontSize: "2rem"
+              }}>{`${range[0]} - ${range[1]}`}</Typography>
+              <Typography sx={{
+                marginBottom: "-8px"
+              }}>{t("range")}</Typography>
+              <SliderRange onChange={onChangeRange} value={range} min={[0, 695]} max={[705, 1400]} />
+              <Box sx={{
                 marginTop: "20px"
-              }} />
+              }} >
+                <Typography textAlign={"center"} sx={{
+                  fontWeight: "600",
+                  fontSize: "2rem"
+                }}>{rate}</Typography>
+                <Typography sx={{
+                  marginBottom: "-8px"
+                }}>{t("rate")}</Typography>
+                <SliderRate onChange={onChangeRate} value={rate} min={0} max={1400} />
+              </Box>
+
 
               <Box sx={{ marginTop: "60px" }}>
                 <Stack spacing={2.5}>

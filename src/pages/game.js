@@ -4,12 +4,7 @@ import GameHeader from "../components/game-header";
 import ChessBoard from "../components/chess-board";
 import ChessInfo from "../components/chess-info";
 
-import SliderRate from "../components/slide-rate";
-import SliderRange from "../components/slide-range";
-import StakeItem from "../components/stake-item";
-
-import { Tabs, Tab, Paper, Container, Box, Button, Stack } from '@mui/material';
-import { useCallback, useState } from 'react';
+import { Paper, Container, Box, Button, Stack } from '@mui/material';
 
 import HomeIcon from "../../public/assets/icons/home.svg";
 import PlayIcon from "../../public/assets/icons/play.svg";
@@ -18,13 +13,6 @@ import LearnIcon from "../../public/assets/icons/learn.svg";
 import TodayIcon from "../../public/assets/icons/today.svg";
 import ConnectIcon from "../../public/assets/icons/connect.svg";
 import MoreIcon from "../../public/assets/icons/more.svg";
-
-const BUTTONS = [
-  ["1 min", "2 min | 1s", "3 min"],
-  ["3 min | 2s", "5 min", "5 min | 5s"],
-  ["10 min", "15 min | 10s", "15 min"]
-];
-
 
 function GamePage() {
   const { t } = useTranslation("game");

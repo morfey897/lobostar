@@ -79,5 +79,10 @@ export default {
     tab_movie: "Movie",
     tab_chat: "Chat",
     tab_settings: "Settings",
+
+    time: "Time",
+    type: "Type",
+    rating: "Rating",
+    points: "Points"
   }
 };
