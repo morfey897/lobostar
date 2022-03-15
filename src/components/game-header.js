@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { styled } from "@mui/system";
 import { AppBar, Box, Toolbar, IconButton, Typography, Container, Button, Menu, MenuItem, ListItemIcon, SvgIcon, Stack } from '@mui/material';
 
-import SearchInput from "./seach-input";
+import SearchInput from "./search-input";
 import Header from "./simple-header";
 
 import LightUIIcon from "../../public/assets/icons/light_ui.svg";

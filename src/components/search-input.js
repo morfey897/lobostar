@@ -18,7 +18,7 @@ function SearchInput({ placeholder, border = true }) {
     endAdornment={<IconButton>
       <SearchIcon />
     </IconButton>}
-  />
+  />;
 }
 
 export default SearchInput;

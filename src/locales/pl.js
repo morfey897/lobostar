@@ -75,6 +75,7 @@ export default {
     btn_connect: "Conect",
     btn_more: "More",
     btn_learn: "Learn",
+    btn_send: "Send",
 
     tab_movie: "Movie",
     tab_chat: "Chat",
@@ -83,6 +84,7 @@ export default {
     time: "Time",
     type: "Type",
     rating: "Rating",
-    points: "Points"
+    points: "Points",
+    chat_palceholder: "Enter your message here"
   }
 };

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Tabs, Tab, Paper, Box, Typography, Button, Stack, Divider as MuiDivider, Select, MenuItem, FormControl } from '@mui/material';
+import { Box, Typography, Button, Stack, Divider as MuiDivider, Select, MenuItem } from '@mui/material';
 
 import withTab from "../hocs/hoc-tab";
 import { styled } from '@mui/system';

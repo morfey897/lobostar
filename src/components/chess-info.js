@@ -11,7 +11,7 @@ function ChessInfo() {
 
   const { t } = useTranslation("game");
 
-  const [activeTab, setActiveTab] = useState(2);
+  const [activeTab, setActiveTab] = useState(1);
 
   const onChangeActiveTab = useCallback((event, newValue) => {
     setActiveTab(newValue);
@@ -45,7 +45,7 @@ function ChessInfo() {
     }}>
 
       <TabMovie value={activeTab} index={0} />
-      <TabChat value={activeTab} index={1} />
+      <TabChat value={activeTab} index={1} parentHeader={710 - 60} />
       <TabSettings value={activeTab} index={2} />
     </Paper>
   </Box>

@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import Layout from "../components/layout";
 import MainHeader from "../components/main-header";
-import SearchInput from "../components/seach-input";
+import SearchInput from "../components/search-input";
 import UserIcon from "../../public/assets/icons/user.svg";
 
 import { Table, TableBody, TableCell, TableContainer, TableRow, TableHead, Grid, Paper, Container, Box, Button, Typography } from '@mui/material';
