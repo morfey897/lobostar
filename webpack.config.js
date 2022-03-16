@@ -86,7 +86,7 @@ module.exports = (env, argv) => {
         },
         {
           test: /\.(png|jpg|jpeg)$/,
-          include: /\/public\/assets\/imgs\//,
+          // include: /\/public\/assets\/imgs\//,
           use: {
             loader: 'file-loader',
             options: {
@@ -98,12 +98,11 @@ module.exports = (env, argv) => {
         },
         {
           test: /\.(svg)$/,
-          include: /\/public\/assets\/icons\//,
+          // include: /\/public\/assets\/icons\//,
           use: ['@svgr/webpack'],
         },
         {
           test: /\.(woff|woff2|ttf|eot)$/,
-          // include: /\/public\/assets\/(fivestarbot|reviewhustlers)\/fonts\//,
           use: {
             loader: 'file-loader',
             options: {
